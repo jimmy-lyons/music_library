@@ -16,3 +16,9 @@ class TestMusicLibrary(unittest.TestCase):
         music_library = MusicLibrary()
         music_library.add("Creep")
         self.assertEqual(getattr(music_library, '_library'), {1: "Creep"})
+
+    def test_can_two_songs_to_library(self):
+        music_library = MusicLibrary()
+        music_library.add("Creep")
+        music_library.add("Woohoo")
+        self.assertEqual(getattr(music_library, '_library'), {1: "Creep", 2: "Woohoo"})
