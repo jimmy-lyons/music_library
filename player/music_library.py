@@ -10,5 +10,8 @@ class MusicLibrary:
         return list(self._library.values())
 
     def remove(self, index):
-        del self._library[index]
-        return True
+        if index in self._library:
+            del self._library[index]
+            return True
+        else:
+            return False

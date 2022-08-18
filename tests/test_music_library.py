@@ -35,3 +35,8 @@ class TestMusicLibrary(unittest.TestCase):
         music_library.add("Woohoo")
         self.assertTrue(music_library.remove(2))
         self.assertEqual(getattr(music_library, '_library'), {1: "Creep"})
+
+    def test_cant_delete_non_existing_songs(self):
+        music_library = MusicLibrary()
+        self.assertFalse(music_library.remove(1))
+        
