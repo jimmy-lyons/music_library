@@ -5,3 +5,6 @@ class MusicLibrary:
     def add(self, song):
         song_index = len(self._library) + 1
         self._library[song_index] = song
+
+    def all(self):
+        return list(self._library.values())
