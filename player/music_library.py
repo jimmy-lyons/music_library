@@ -8,3 +8,7 @@ class MusicLibrary:
 
     def all(self):
         return list(self._library.values())
+
+    def remove(self, index):
+        del self._library[index]
+        return True

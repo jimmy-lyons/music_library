@@ -28,3 +28,10 @@ class TestMusicLibrary(unittest.TestCase):
         music_library.add("Creep")
         music_library.add("Woohoo")
         self.assertEqual(music_library.all(), ['Creep', 'Woohoo'])
+
+    def test_can_remove_song_by_index(self):
+        music_library = MusicLibrary()
+        music_library.add("Creep")
+        music_library.add("Woohoo")
+        self.assertTrue(music_library.remove(2))
+        # self.assertEqual(getattr(music_library, '_library'), {1: "Creep", 2: "Woohoo"})
