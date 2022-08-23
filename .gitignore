@@ -1,1 +1,16 @@
 .DS_Store
+player/__init__.pyc
+player/music_library.pyc
+.gitignore
+player/__pycache__/__init__.cpython-310.pyc
+player/__pycache__/music_library.cpython-310.pyc
+tests/test_music_library.pyc
+tests/__pycache__/__init__.cpython-310.pyc
+tests/__pycache__/test_music_library.cpython-310.pyc
+ui/__init__.pyc
+ui/__pycache__/__init__.cpython-310.pyc
+.gitignore
+ui/__pycache__/__main__.cpython-310.pyc
+ui/__pycache__/interface.cpython-310.pyc
+ui/__pycache__/mocks.cpython-310.pyc
+ui/__pycache__/test_interface.cpython-310.pyc
