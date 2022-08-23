@@ -12,6 +12,16 @@ class MusicLibrary:
     def remove(self, index):
         if index in self._library:
             del self._library[index]
+            self.re_index()
             return True
         else:
             return False
+
+    def re_index(self):
+        i = 1
+        temp_dict = {}
+        for k in self._library:
+            temp_dict[i] = self._library[k]
+            i += 1
+        self._library = temp_dict
+        

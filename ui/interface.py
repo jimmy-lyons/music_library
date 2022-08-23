@@ -45,7 +45,7 @@ class Interface:
     def _remove_track(self):
         self._list_tracks()
         track_id = int(self.console.input("Which do you want to delete? "))
-        if self.music_library.remove(track_id - 1):
+        if self.music_library.remove(track_id):
             self.console.print("Deleted successfully.")
         else:
             self.console.print("No such track.")
