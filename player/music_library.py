@@ -1,3 +1,6 @@
+from dataclasses import dataclass
+
+
 class MusicLibrary:
     def __init__(self):
         self._library = {}
@@ -24,4 +27,13 @@ class MusicLibrary:
             temp_dict[i] = self._library[k]
             i += 1
         self._library = temp_dict
+        
+@dataclass
+class Track:
+    title: str
+    artist: str
+    file: str
+
+    def __str__(self):
+        return f"{self.title} by {self.artist}"
         
